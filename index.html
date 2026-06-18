@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ Foco & Rotina · Contra a Procrastinação</title>
+    <!-- CSS separado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⏳ Domine seu Tempo</h1>
+            <p class="subhead">pare de procrastinar, construa sua rotina</p>
+        </header>
+
+        <!-- Frase motivacional -->
+        <section class="motivational-box" id="motivationalBox">
+            <p id="motivationalPhrase">“A ação é a chave fundamental para todo sucesso.”</p>
+            <button id="newPhraseBtn">✨ nova motivação</button>
+        </section>
+
+        <!-- Construtor de rotina -->
+        <section class="routine-builder">
+            <h2>🧩 monte sua rotina diária</h2>
+            <div class="form-row">
+                <input type="text" id="taskInput" placeholder="ex: estudar 1h, exercícios, leitura..." />
+                <button id="addTaskBtn">➕ adicionar</button>
+            </div>
+            <div class="time-picker">
+                <label for="taskTime">⏰ horário (opcional):</label>
+                <input type="time" id="taskTime" value="09:00" />
+                <span class="hint">(use para organizar sua ordem)</span>
+            </div>
+        </section>
+
+        <!-- Lista de tarefas / rotina -->
+        <section class="routine-list">
+            <h3>📋 sua rotina de hoje</h3>
+            <div id="taskListContainer">
+                <ul id="taskList">
+                    <li class="empty-message">Nenhuma tarefa ainda. Adicione acima!</li>
+                </ul>
+            </div>
+            <div class="list-actions">
+                <button id="clearAllBtn">🗑️ limpar tudo</button>
+                <button id="sortByTimeBtn">⏱️ ordenar por horário</button>
+            </div>
+        </section>
+
+        <!-- Dicas anti-procrastinação -->
+        <section class="tips">
+            <h4>💡 dicas para manter o foco</h4>
+            <ul>
+                <li>✔ Comece com a tarefa mais difícil (regra dos 5 minutos)</li>
+                <li>✔ Use a técnica Pomodoro: 25 min foco, 5 min pausa</li>
+                <li>✔ Elimine distrações: celular em modo avião</li>
+                <li>✔ Recompense-se ao concluir cada bloco</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>⏰ “Você não encontra tempo para fazer as coisas, você cria tempo.”</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript separado -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background: linear-gradient(145deg, #f5f0eb 0%, #e8e0d8 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: rgba(255, 250, 245, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 48px;
+    padding: 30px 35px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 6px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 245, 235, 0.5);
+    transition: all 0.2s ease;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: #2c241e;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.subhead {
+    color: #5f4e42;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 4px;
+    border-left: 4px solid #c9b09b;
+    padding-left: 14px;
+    background: rgba(200, 170, 150, 0.1);
+    border-radius: 0 12px 12px 0;
+}
+
+/* motivational box */
+.motivational-box {
+    background: #e7d9ce;
+    padding: 20px 24px;
+    border-radius: 40px;
+    margin: 25px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: inset 0 2px 6px rgba(90, 60, 40, 0.08);
+    border: 1px solid #dacbc0;
+}
+
+.motivational-box p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #2f241d;
+    flex: 1;
+    min-width: 200px;
+    padding-right: 12px;
+    font-style: italic;
+}
+
+#newPhraseBtn {
+    background: #3f3129;
+    border: none;
+    color: #f6ede6;
+    padding: 10px 22px;
+    border-radius: 60px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    white-space: nowrap;
+}
+
+#newPhraseBtn:hover {
+    background: #5b453a;
+    transform: scale(1.02);
+    box-shadow: 0 8px 14px rgba(60, 40, 30, 0.15);
+}
+
+/* routine builder */
+.routine-builder {
+    margin: 20px 0 12px;
+}
+
+.routine-builder h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #2b211b;
+    margin-bottom: 12px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+#taskInput {
+    flex: 2;
+    min-width: 200px;
+    padding: 14px 18px;
+    border: 1px solid #d3c2b5;
+    border-radius: 60px;
+    background: #fcf8f4;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.2s;
+}
+
+#taskInput:focus {
+    border-color: #a5836e;
+    box-shadow: 0 0 0 3px rgba(165, 130, 110, 0.2);
+}
+
+#addTaskBtn {
+    background: #6d8b7a;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 60px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#addTaskBtn:hover {
+    background: #5a7a66;
+    transform: scale(1.02);
+}
+
+.time-picker {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 16px;
+    background: #f2ebe4;
+    padding: 12px 18px;
+    border-radius: 60px;
+}
+
+.time-picker label {
+    font-weight: 500;
+    color: #3f322a;
+}
+
+#taskTime {
+    background: #fcf8f4;
+    border: 1px solid #ccb9ab;
+    border-radius: 40px;
+    padding: 8px 14px;
+    font-size: 1rem;
+}
+
+.hint {
+    font-size: 0.8rem;
+    color: #6e5c4f;
+    opacity: 0.8;
+}
+
+/* task list */
+.routine-list {
+    margin: 28px 0 16px;
+}
+
+.routine-list h3 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #2b211b;
+    margin-bottom: 10px;
+}
+
+#taskListContainer {
+    background: rgba(245, 235, 225, 0.5);
+    border-radius: 30px;
+    padding: 6px 6px 6px 6px;
+    border: 1px solid #decfc2;
+}
+
+#taskList {
+    list-style: none;
+    padding: 6px 4px;
+    min-height: 80px;
+}
+
+#taskList li {
+    background: #fcf6f0;
+    margin: 6px 0;
+    padding: 14px 20px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 8px solid #b6a392;
+    font-size: 1rem;
+    color: #2a1f19;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    transition: 0.15s;
+}
+
+#taskList li:hover {
+    background: #f7eee6;
+    border-left-color: #7f6a5b;
+}
+
+#taskList li .task-time {
+    background: #dccfc4;
+    padding: 4px 14px;
+    border-radius: 60px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #2f231d;
+}
+
+#taskList li .task-text {
+    flex: 1;
+    padding-right: 12px;
+}
+
+#taskList li .delete-btn {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #a27a68;
+    transition: 0.2s;
+    padding: 0 8px;
+}
+
+#taskList li .delete-btn:hover {
+    color: #b1462c;
+    transform: scale(1.2);
+}
+
+.empty-message {
+    text-align: center;
+    color: #7e6b5d;
+    font-style: italic;
+    padding: 26px 10px !important;
+    border-left-color: #d6c5b8 !important;
+    background: transparent !important;
+    justify-content: center !important;
+}
+
+.list-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.list-actions button {
+    background: #dfd2c7;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 60px;
+    font-weight: 500;
+    color: #2b1f19;
+    cursor: pointer;
+    transition: 0.15s;
+    font-size: 0.9rem;
+}
+
+.list-actions button:hover {
+    background: #cbb9ab;
+    transform: scale(0.97);
+}
+
+#clearAllBtn {
+    background: #d6bfb2;
+}
+
+#clearAllBtn:hover {
+    background: #c4a897;
+}
+
+/* tips */
+.tips {
+    margin: 30px 0 18px;
+    background: #e2d5ca;
+    padding: 16px 22px;
+    border-radius: 40px;
+}
+
+.tips h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f1814;
+    margin-bottom: 8px;
+}
+
+.tips ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.tips ul li {
+    color: #2a1f19;
+    font-size: 0.95rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 24px;
+    color: #4a3b32;
+    font-style: italic;
+    border-top: 1px solid #dacbc0;
+    padding-top: 16px;
+}
+
+/* responsivo */
+@media (max-width: 600px) {
+    .container { padding: 20px; }
+    header h1 { font-size: 2rem; }
+    .motivational-box { flex-direction: column; align-items: flex-start; gap: 12px; }
+    #newPhraseBtn { align-self: flex-start; }
+    .form-row { flex-direction: column; align-items: stretch; }
+    #addTaskBtn { width: 100%; }
+}
